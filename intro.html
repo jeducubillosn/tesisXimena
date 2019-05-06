@@ -1,0 +1,305 @@
+<!doctype html>
+<html><head>
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto|Squada+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="transicion.js" type="text/javascript" charset="utf-8"></script>
+<meta charset="utf-8">
+<title>Introduccion</title>
+	
+	
+<style type="text/css">
+body { width:100%;
+       height: 100%;
+       margin: 0 auto;
+	}
+	
+	
+.codrops-demos a { margin: 15px; padding: 5px; color: white;}	
+				
+	
+.parrafos { margin-top: -5em;
+           font-family:Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+	       font-size: 17px;
+		   text-align: justify;
+	       line-height: 30px;
+	       margin-left: 10em;
+	       margin-right: 10em; z-index:1000; 
+	      }
+	
+#tooltip .contenedor {  border-top: solid 3px ;
+	                    border-bottom: solid 3px ; 
+	                    border-color: #ff5959;
+	                    margin-top: 2em;
+	                    margin-bottom: 2em;
+	                }	
+		
+.tooltip { position: relative;
+	       display: inline-block;
+	       border-bottom: 1px dotted black black; 
+	       margin: 20px; 
+	       font-family:  'Noticia Text', serif;
+	       font-size: 20px;
+	       color: black;
+	       margin-top: 2em;
+	       margin-bottom: 2em;
+	       
+	      }
+	
+/* primero */
+	
+.tooltip .tooltiptop {  visibility: hidden; 
+	                    width: 500px;
+	                    height: 400px;
+	                    background-color:black;
+	                    color: white;
+	                    text-align: center;
+	                    border-radius: 6px;
+	                    padding: 5px 0;
+	                    position: absolute;
+	                    z-index: 1;
+	                    bottom: 100%;
+	                    left: 50%;
+	                    margin-left: -60px;
+	                    opacity: 0; 
+	                    transition: opacity 1s; 
+	                    
+	                    }
+	
+.tooltip:hover .tooltiptop { visibility: visible;
+	                          opacity: 1;
+	                        }
+	
+.tooltip .tooltiptop::after {  content: "";
+	                           position: absolute;
+	                           top:100%;
+	                           left: 50%;
+	                           margin-left: -5px;
+	                           border-width: 5px;
+	                           border-style: solid;
+	                           
+                              }			
+	
+	
+	
+	
+@media (max-width:700px)
+{
+.parrafos { margin-left: 50px;
+	        margin-right: 50px;
+	        margin-top: 8px; }	
+
+.codrops-demos a { font-size: 10px;}	
+
+}			
+
+
+</style>
+</head>
+	
+	
+	
+	
+<body>
+
+
+<div id="container" class="container intro-effect-fadeout">
+			<header class="header">
+				<div class="bg-img"><img src="Imagenes/Intro/Intro.jpeg"></div>
+				<div class="title">
+					<nav class="codrops-demos">
+						<a href="salud general.html" style="text-decoration: none; border-bottom: solid 2px;"><b>NUEVO PANORAMA</b></a>
+						<a href="salud pedregal.html" style="text-decoration: none;  border-bottom: solid 2px;"><b>DOBLE CONDENA</b></a>
+						<a href="mujeres.html" style="text-decoration: none; border-bottom: solid 2px;"><b>“AQUÍ HAY SERES HUMANOS”</b></a>
+					</nav>
+					<h1>OLVIDADAS EN EL ENCIERRO</h1> 
+                    <p>-Diagnóstico del servicio a la salud mental de las mujeres en las cárceles de Colombia. Análisis el caso de EL PEDREGAL-</p>
+                </div>
+			</header>
+			<button class="trigger"><img src="Imagenes/Intro/36657.png" width="50"/></button>
+</div>
+						
+<div class="parrafos">
+<p>Después del año 2015, el Estado colombiano decidió buscar una solución para erradicar la corrupción y el mal servicio que había dejado la EPS Caprecom en el sistema de salud penitenciario. La respuesta fue tercerizar este sistema al punto en que las decisiones son tomadas por entidades estatales, los recursos económicos manejados por una fiduciaria y el servicio de salud brindado por diferentes IPS.</p>
+
+<p>A pesar de la restauración, los problemas del servicio a la salud mental de las personas privadas de la libertad que han sido diagnosticadas con enfermedades mentales todavía continúan. Un claro ejemplo de esta problemática es el establecimiento carcelario y penitenciario El Pedregal, ubicado en Medellín, Antioquia, que es el segundo en el país en albergar una gran cantidad de mujeres que padecen de alguna enfermedad mental. El servicio de salud mental para estas mujeres se enfoca en tratamientos psiquiátricos y psicológicos que presentan fallas.</p>
+
+<p>Este especial está construido desde las voces de las mujeres del establecimiento El Pedregal que padecen de una enfermedad mental y funcionarios estatales involucrados en el servicio a la salud mental de la población privada de la libertad*. En la primera sección, ‘nuevo panorama’, se explica el funcionamiento del sistema de salud penitenciario y la problemática del servicio a la salud mental. En la segunda, ‘doble condena’, la discriminación del servicio hacia la mujer privada de la libertad y diagnosticada rescatando el caso de las internas del establecimiento El Pedregal. Y por último, en “aquí hay seres humanos”’ se relata la experiencia de vida de tres mujeres de Pedregal con respecto a su enfermedad mental.</p>
+					
+<p>*Para proteger las identidades de las personas que decidieron ayudar en esta investigación al dar su testimonio se modificaron sus nombres y se excluyó el cargo laboral.</p>					
+
+					
+<section id="tooltip">
+<div class="contenedor">					
+<div class="tooltip">
+      Agradecimientos y créditos
+       <span class="tooltiptop">
+	   <p style="color: #facf5a">Créditos:</p>
+       <p>- Investigación y redacción: Laura Ximena Peñuela Lentino</p>
+       <p>- Ilustraciones: Julián Cáceres</p>
+       <p style="color: #facf5a">Agradecimientos</p>
+       <p>A Cristina, Jenny y Karen quienes son las protagonistas y ejecutoras de esta investigación. </p>
+       <p>A cada uno de los funcionarios.</p> 
+       <p>Y a Oscar Caballero, director de tesis, por su orientación.</p>
+       
+       
+       
+       
+       
+       
+       </span>
+  </div>					
+</div>		
+</section>									
+</div>				
+</body>
+</html>
+
+
+
+<script src="js/classie.js"></script>
+		<script>
+			(function() {
+
+				// detect if IE : from http://stackoverflow.com/a/16657946		
+				var ie = (function(){
+					var undef,rv = -1; // Return value assumes failure.
+					var ua = window.navigator.userAgent;
+					var msie = ua.indexOf('MSIE ');
+					var trident = ua.indexOf('Trident/');
+
+					if (msie > 0) {
+						// IE 10 or older => return version number
+						rv = parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+					} else if (trident > 0) {
+						// IE 11 (or newer) => return version number
+						var rvNum = ua.indexOf('rv:');
+						rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
+					}
+
+					return ((rv > -1) ? rv : undef);
+				}());
+
+
+				// disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179					
+				// left: 37, up: 38, right: 39, down: 40,
+				// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+				var keys = [32, 37, 38, 39, 40], wheelIter = 0;
+
+				function preventDefault(e) {
+					e = e || window.event;
+					if (e.preventDefault)
+					e.preventDefault();
+					e.returnValue = false;  
+				}
+
+				function keydown(e) {
+					for (var i = keys.length; i--;) {
+						if (e.keyCode === keys[i]) {
+							preventDefault(e);
+							return;
+						}
+					}
+				}
+
+				function touchmove(e) {
+					preventDefault(e);
+				}
+
+				function wheel(e) {
+					// for IE 
+					//if( ie ) {
+						//preventDefault(e);
+					//}
+				}
+
+				function disable_scroll() {
+					window.onmousewheel = document.onmousewheel = wheel;
+					document.onkeydown = keydown;
+					document.body.ontouchmove = touchmove;
+				}
+
+				function enable_scroll() {
+					window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;  
+				}
+
+				var docElem = window.document.documentElement,
+					scrollVal,
+					isRevealed, 
+					noscroll, 
+					isAnimating,
+					container = document.getElementById( 'container' ),
+					trigger = container.querySelector( 'button.trigger' );
+
+				function scrollY() {
+					return window.pageYOffset || docElem.scrollTop;
+				}
+				
+				function scrollPage() {
+					scrollVal = scrollY();
+					
+					if( noscroll && !ie ) {
+						if( scrollVal < 0 ) return false;
+						// keep it that way
+						window.scrollTo( 0, 0 );
+					}
+
+					if( classie.has( container, 'notrans' ) ) {
+						classie.remove( container, 'notrans' );
+						return false;
+					}
+
+					if( isAnimating ) {
+						return false;
+					}
+					
+					if( scrollVal <= 0 && isRevealed ) {
+						toggle(0);
+					}
+					else if( scrollVal > 0 && !isRevealed ){
+						toggle(1);
+					}
+				}
+
+				function toggle( reveal ) {
+					isAnimating = true;
+					
+					if( reveal ) {
+						classie.add( container, 'modify' );
+					}
+					else {
+						noscroll = true;
+						disable_scroll();
+						classie.remove( container, 'modify' );
+					}
+
+					// simulating the end of the transition:
+					setTimeout( function() {
+						isRevealed = !isRevealed;
+						isAnimating = false;
+						if( reveal ) {
+							noscroll = false;
+							enable_scroll();
+						}
+					}, 600 );
+				}
+
+				// refreshing the page...
+				var pageScroll = scrollY();
+				noscroll = pageScroll === 0;
+				
+				disable_scroll();
+				
+				if( pageScroll ) {
+					isRevealed = true;
+					classie.add( container, 'notrans' );
+					classie.add( container, 'modify' );
+				}
+				
+				window.addEventListener( 'scroll', scrollPage );
+				trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+			})();
+		</script>
