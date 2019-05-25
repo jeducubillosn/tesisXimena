@@ -1,5 +1,5 @@
 //almacenar slider en una variable
-var slider = $('#slider');
+var slider = $('slider');
 //almacenar botones
 var siguiente = $('#btn-next');
 var anterior = $('#btn-prev');
